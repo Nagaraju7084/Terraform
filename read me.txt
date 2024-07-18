@@ -6,3 +6,7 @@ commands
 >terraform apply
 //command to destroy the project
 >terraform destroy
+//after output.tf file creation, we have to execute terraform project again
+//note : after executing terraform project, if we want to perform any changes
+//or create any files we can do and later we will execute but no need to destroy
+//the project like above(just for understanding/showing before output file creation and after output file creation, previously I destroyed)
