@@ -1,0 +1,8 @@
+//steps to execute terraform project
+1.goto the terraform project directory
+commands
+>terraform init
+>terraform plan (optional) //what exactly we are going to create before applying
+>terraform apply
+//command to destroy the project
+>terraform destroy
