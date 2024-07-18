@@ -1,0 +1,9 @@
+1.when we use module, no need of tfvars file
+developer who can execute this module who will get the tfvars file
+so removing the tfvars file from this module i.e. ec2_instance module
+
+2.any developer can create a file called main.tf under root folder i.e. terraform 170724 and will write
+provider and instead of resource developer will use module
+see main.tf file in root folder
+
+3.after writing main.tf file then execute the terraform project
