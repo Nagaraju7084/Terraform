@@ -13,3 +13,6 @@ resource "aws_instance" "naga" {
 //then you will get the state file in the project folder
 //delete the state file
 
+resource "aws_s3_bucket" "s3_bucket" {
+  bucket = "naga-s3-xyz"
+}
