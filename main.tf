@@ -11,3 +11,16 @@ module "ec2_instance" {
 
 //location of the module if module is in github repository then provide that github link/url
 //we can call the modules and pass the values using main.tf
+
+resource "aws_dynamodb_table" "terraform_lock" {
+  name = "terraform-lock"
+  billing_mode = "PAY_PER_REQUEST"
+  hash_key = "LockId"
+
+  attribute {
+    name = "LockId"
+    type = "S"
+  }
+}
+
+//comment the backend.tf and execute the project after that uncomment backend.tf and execute the project
